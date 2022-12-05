@@ -1,0 +1,32 @@
+class Main {
+  public static void main(final String[] args) {
+    System.out.println(letterGrade(80));
+    System.out.println(letterGrade(99));
+    System.out.println(letterGrade(75));
+    
+  }
+
+  public static String letterGrade(final int g) {
+    String grade = "";
+    if (g == 100) {
+      grade = "A+";
+    }
+    else if (g >= 90) {
+      grade = "A";
+    }
+    else if (g >= 80) {
+      grade = "B";
+    }
+    else if (g >= 70) {
+      grade = "C";
+    }
+    else if (g <= 60) {
+      grade = "D";
+    }
+     
+    
+   return grade;  
+  }
+
+
+}
